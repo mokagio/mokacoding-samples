@@ -1,0 +1,3 @@
+target :ResourceBundlePodExample do
+  pod 'ResourcesPod', :path => '.'
+end

@@ -1,0 +1,14 @@
+PODS:
+  - ResourcesPod (0.0.1)
+
+DEPENDENCIES:
+  - ResourcesPod (from `.`)
+
+EXTERNAL SOURCES:
+  ResourcesPod:
+    :path: .
+
+SPEC CHECKSUMS:
+  ResourcesPod: ec0c81968f9bae8a778315fb86a936bb8cae931d
+
+COCOAPODS: 0.29.0
