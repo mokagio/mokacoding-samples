@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: .
 
 SPEC CHECKSUMS:
-  ResourcesPod: ec0c81968f9bae8a778315fb86a936bb8cae931d
+  ResourcesPod: 007653d8f8474fb2f50b3b7649284b7e0dbd5ef6
 
 COCOAPODS: 0.29.0

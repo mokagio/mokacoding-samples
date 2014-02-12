@@ -1,6 +1,7 @@
 
 #import "ViewController.h"
-#import <CoreText/CoreText.h>
+#import <FontsManager.h>
+#import <ImagesManager.h>
 
 @interface ViewController ()
 
@@ -13,38 +14,19 @@
     [super viewDidLoad];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:imageView];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 40)];
     label.text = @"It works";
-    label.textColor = [UIColor blueColor];
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
     
-    // Load the font
-    NSString *kBundle = @"ResourceBundle.bundle";
-    NSString *name = @"OpenSans-Light";
-    NSString *resourceName = [NSString stringWithFormat:@"%@/%@", kBundle, name];
-    NSURL *url = [[NSBundle mainBundle] URLForResource:resourceName withExtension:@"ttf"];
-    NSData *fontData = [NSData dataWithContentsOfURL:url];
-    if (fontData) {
-        CFErrorRef error;
-        CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)fontData);
-        CGFontRef font = CGFontCreateWithDataProvider(provider);
-        if (! CTFontManagerRegisterGraphicsFont(font, &error)) {
-            CFStringRef errorDescription = CFErrorCopyDescription(error);
-            NSLog(@"Failed to load font: %@", errorDescription);
-            CFRelease(errorDescription);
-        }
-        CFRelease(font);
-        CFRelease(provider);
-    }
-    label.font = [UIFont fontWithName:name size:20];
+    // Load the font from the resources pod
+    label.font = [FontsManager openSansLightFontOfSize:36];
     
-    // Load the image
-    NSString *imageName = [NSString stringWithFormat:@"%@/%@", kBundle, @"polar-bear.jpg"];
-    NSURL *imageUrl = [[NSBundle mainBundle] URLForResource:imageName withExtension:nil];
-    imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageUrl]];
+    // Load the image from the resources pod
+    imageView.image = [ImagesManager polarBear];
 }
 
 @end
