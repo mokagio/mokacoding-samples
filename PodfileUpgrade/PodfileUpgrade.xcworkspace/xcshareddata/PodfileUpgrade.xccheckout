@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7D64C153-AB64-43DD-9D12-9DAF6A25D11B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PodfileUpgrade</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B3C9949B-E651-478F-A7A8-5FD1A9D82058</key>
+		<string>ssh://github.com/mokagio/mokacoding-samples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PodfileUpgrade/PodfileUpgrade.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B3C9949B-E651-478F-A7A8-5FD1A9D82058</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/mokagio/mokacoding-samples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B3C9949B-E651-478F-A7A8-5FD1A9D82058</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B3C9949B-E651-478F-A7A8-5FD1A9D82058</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mokacoding-samples</string>
+		</dict>
+	</array>
+</dict>
+</plist>
