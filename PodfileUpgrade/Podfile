@@ -1,0 +1,5 @@
+link_with ["PodfileUpgrade", "PodfileUpgradeTests"]
+
+pod 'AFNetworking'
+pod 'Kiwi'
+
